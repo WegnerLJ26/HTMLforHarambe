@@ -1,0 +1,25 @@
+/* horizontal nav bar */
+#nav_bar {
+	clear: left;
+	margin: 0;
+	padding: 0;
+	border-bottom: 2px solid #ef9c00;
+}
+#nav_bar ul {
+	margin-left: 0;
+	margin-bottom: .5em;
+	list-style: none;
+	padding: 0.5em 2em 0 0;
+}
+#nav_bar li {
+	display: inline;
+	padding: 0 1.5em;
+	border-right: 2px solid black;
+}
+#nav_bar a:visited { color: green; }
+#nav_bar a.current { color: #ef9c00; }
+
+#nav_bar a:hover, a:focus{
+	background-color: yellow; 
+	color: red; 
+}
