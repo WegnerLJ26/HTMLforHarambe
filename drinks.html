@@ -4,9 +4,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Drinks</title>
-		<!--<link rel="shortcut icon" href="images/favicon.ico">
+		<!--<link rel="shortcut icon" href="images/favicon.ico">-->
 		<link rel="stylesheet" href="styles/main.css">  <!--step 3: add URL of the CSS file-->
-		<!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+		
+		<!-- include jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+		</script>
+
 	</head>
 
 	<body>
@@ -20,29 +24,215 @@
 			</hgroup>
 		</header>
 		
-		<!-- navigation section -->
-		<nav id="nav_menu">
-    
-        	<a href="Homepage.html">Home<a/>
-        	<a href="drinks.html">Drinks<a/>
-        	<a href="cateringpage.html">Catering</a>
-        	<a href="aboutus.html">About Us</a>
-        	<a href="contact.html">Contact</a>
-
+		<!--universal horizontal nav bar -->
+		<nav id="nav_bar">
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="drinks.html">Drinks</a></li>
+				<li><a href="cateringpage.html">Catering</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</nav>
 
+		<!-- script for displaying the appropriate drinks in the drinks_dropdown div section -->
+		<script>
+			//Checking if the document is ready
+			$(document).ready(function(){
+				/*Creating function to display appropriate drink pictures and summary when drink choice is selected in the drinks_dropdown menu*/
+				$('.dropbtn').click(function(){
+					//Storing what drink the user wishes to see a picture and summary on
+					var selection = '';
+					selection = $("#drink_select option:selected").val();
+
+					//Display chosen drink
+					switch(selection){
+						case 'Woparita':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" width="200px" height="200px"/>');
+
+							//Set the summary
+							$('.drinks_summary').html("The Woparita has been a staple of Mark's Margs every since the company was founded.");
+							break;
+						case 'Morning Sunrise':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Morning Sunrise is the perfect drink for a Saturday morning.");
+							break;
+						case 'Coffee Marg':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Coffee Marg is the perfect replacement for regular old morning coffee!");
+							break;
+						case 'Tropical Marg':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Tropical Marg is great for a nice summary day at the Whitewater beach!");
+							break;
+						case 'Pomarita':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("With the Pomarita we have taken the classic Pomegranate flavor and recreated it as a fantastic Margarita treat!");
+							break;
+						case 'The Caliente Marg':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Caliente Marg is for those spice lovers out there.");
+							break;
+						case 'Chocolate Marg':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Chocolate Marg is for all those sweet lovers out there.");
+							break;
+						case 'Strawberry Marg':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Strawberry Marg is a classic well known drink, created the Mark's Marg way.");
+							break;
+						case 'Raspbarita':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Raspbarita is another classic drink created by Mark with a unique twist.");
+							break;
+						case 'The Mamacita':
+							//Set the image
+							$('.drinks_image').html('<img src="images/marg.jpg" />');
+
+							//Set the summary
+							$('.drinks_summary').html("The Mamacita is right behind the Woparita in popularity.");
+							break;
+					}
+
+				});
+
+			});
+
+		</script>
+
 		<!-- float section to the left -->
-		<section>
-		<h2>Our Signature Drinks</h2>
-		<h3>W.O.P.arita</><!--can we style this so it catches your eye the most. also we should make a video of us making and enjoying WOParitas-->
+		<section id="leftdrinks">
+
+		<!-- This dropdown will contain all the drinks that we have on our website. Once you select a drink from the dropdown, it will display an image and brief description of the drink you've chosen. There will be also a link to an external page dedicated to just that drink with a more thorough explanation -->
+			<div class="drinks_dropdown">
+				<select id="drink_select">
+					<option value="Woparita" id="woparita">Woparita</option>
+					<option value="Morning Sunrise" id="morningsunrise">Morning Sunrise</option>
+					<option value="Coffee Marg" id="coffeemarg">Coffee Marg</option>
+					<option value="Tropical Marg" id="topicalmarg">Tropical Marg</option>
+					<option value="Pomarita" id="pomarita">Pomarita</option>
+					<option value="The Caliente Marg" id="calientemarg">The Caliente Marg</option>
+					<option value="Chocolate Marg" id="chocomarg">Chocolate Marg</option>
+					<option value="Strawberry Marg" id="strawberrymarg">Strawberry Marg</option>
+					<option value="Raspbarita" id="raspbarita">Raspbarita</option>
+					<option value="The Mamacita" id="mamacita">The Mamacita</option>
+				</select>
+			</div>
+
+			<!-- This portion will contain the button that is presse after the user has selected a drink from the drinks_dropdown menu -->
+				<button type="button" class="dropbtn">Display Drink</button>
+
+
+			<!-- This portion will be where the image is displayed when a drinks_dropdown option is selected -->
+			<div class="drinks_image"></div>
+
+			<!-- This portion will be where the summary is displayed when a drinks_dropdown option is selected -->
+			<div class="drinks_summary"></div>
+
+		<!-- This will be under our drinks dropdown menu, which will also include all signature drinks -->
+		<div class="signatureDrinks">
+			<h2>Our Signature Drinks</h2>
+			<!--Will have the picture on the left and the description of the drink on the right -->
+
+			<!--Display title of drink above image and summary -->
+			<h3>Woparita</h3>
+
+			<!--Display image on left side -->
+			<div class="sig_float_left">
+				
+			</div>
+
+			<!-- Display summary on right side -->
+			<div class="sig_float_right">
+				<p>Summary of Woparita</p>
+			</div>
+
+			<!--Display title of drink above image and summary -->
+			<h3>Tropical Marg</h3>
+
+			<!-- Display image on left side -->
+			<div class="sig_float_left">
+				
+			</div>
+
+			<!-- Display summary on right side -->
+			<div class="sig_float_right">
+				<p>Summary of Tropical Marg</p>
+			</div>
+
+			<!-- Display title of drink above image and summary -->
+			<h3>The Caliente Marg</h3>
+
+			<!--Display image on left side -->
+			<div class="sig_float_left">
+				
+			</div>
+
+			<!-- Display summary on right side -->
+			<div class="sig_float_right">
+				<p>Summary of The Caliente Marg</p>
+			</div>
+
+			<!-- Display title of drink above image and summary -->
+			<h3>The Mamacita</h3>
+
+			<!-- Display image on left side -->
+			<div class="sig_float_left">
+				
+			</div>
+
+			<!-- Display summary on right side -->
+			<div class="sig_float_right">
+				<p>Summary of The Mamacita</p>
+			</div>
+
+			<!-- Display title of drink above image and summary -->
+			<h3>Morning Sunrise</h3>
+
+			<!-- Display image on left side -->
+			<div class="sig_float_left">
+				
+			</div>
+
+			<!-- Display image on right side -->
+			<div class="sig_float_right">
+				<p>Summary of the Morning Sunrise</p>
+			</div>
+
+		</div>
 		</section>
 
+		<!-- float body to the right -->
+		<body id="righttwitter">
+		<!-- in this portion we will have our embedded twitter feed -->
 
-		<!-- float section to the right -->
-		<aside>
-			<h2> aside: float right. </h2>
-	        <h2> <a href="Homepage.html"> Return to Home Page </a></h2>
-		</aside>	
+		</body>
+
 		<footer>
 			<p>
 				&copy; 2017, Mark M. Margarita 1234 S. Prairie St. Whitewater, WI 53190

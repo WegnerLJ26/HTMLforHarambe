@@ -3,7 +3,7 @@
 	clear: left;
 	margin: 0;
 	padding: 0;
-	border-bottom: 2px solid #ef9c00;
+	border-bottom: 2px solid #00efef;
 }
 #nav_bar ul {
 	margin-left: 0;
@@ -14,10 +14,11 @@
 #nav_bar li {
 	display: inline;
 	padding: 0 1.5em;
-	border-right: 2px solid black;
+	/*border-right: 2px solid black;*/
+	background-color: #00efef;
 }
 #nav_bar a:visited { color: green; }
-#nav_bar a.current { color: #ef9c00; }
+#nav_bar a.current { color: #00efef; }
 
 #nav_bar a:hover, a:focus{
 	background-color: yellow; 
