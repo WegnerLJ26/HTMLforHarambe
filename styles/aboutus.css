@@ -1,0 +1,71 @@
+html{background-color: #b1edad;}
+hgroup {text-align: center;}
+#aboutusimg{
+			height: 100px; width: 75px;
+			margin-right: 10pt
+			}
+#navigashun{margin-top: 1pt;
+			padding: 0;
+			border: 3px solid #e3b62a;
+			text-decoration: none;
+			text-align: center;}
+#navigashun ul{margin: 0;
+				list-style: none;
+				padding: 3px;
+				background-color: #b1edad;
+				text-decoration: none;
+				color: black;
+}
+#navigashun li{display: inline;
+				padding-left: 0;
+				color: black;
+}
+#navigashun a {color: #cc3502;
+				text-decoration: none;
+				font-variant: small-caps;
+				padding: 2pt 3pt 2pt 3pt;}
+#navigashun a:visited {color: none; 
+						text-decoration: none;}
+#navigashun a.current {background-color: #e3b62a;
+						color: black;
+						border-left: 1px solid #b1edad;
+						border-right: 1px solid #b1edad;}
+#navigashun a:hover, a:focus {background-color: #e3b62a;
+								color: green;
+								text-transform: uppercase;
+								border-right: 2px solid #b1edad;
+								border-left: 2px solid #b1edad;
+}
+#navigashun li.lastitem {border-right: none;}
+body{clear: both;}
+		
+
+article{border: solid 5px orange;
+	padding: 10px, 40px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+	text-align: center;}
+#founders{float: left;
+		border: solid 1px black;
+		padding: 0;
+		margin: 15px, 10px;}
+aside{float: right;
+	border: solid 1px black;
+	padding: 0;
+	margin: 15px, 10px;}
+#bio{font-family: Veranda, Arial;
+	text-align: center;
+	text-transform: capitalize;}
+#CEO{float: none;
+	border: solid 5px green;
+	width: 93%;
+	margin-top: 0;
+	margin-left: 15px;
+	padding-left: 5px;
+	padding-right: 5px;}
+#biotext{font-family: Veranda, Arial;
+	text-indent: 15pt;
+footer{float: none;
+	border: solid 5px green;
+	text-align: center;}	
