@@ -2,44 +2,98 @@
 <html lang="en">
 
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<meta charset="utf-8">
-		<title>Town Hall - Ticket Information</title>
+		<title>Contact Us</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="styles/main.css">  <!--step 3: add URL of the CSS file-->
+		<link rel="stylesheet" href="styles/contact.css">  <!--step 3: add URL of the CSS file-->
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	</head>
 
-	<body>
-		<header>
+<body>
+		<div id="backgroundImage">
 
-			<img src="images/town_hall_logo.gif" alt="town hall logo">
-		
+    <div class="main">
+
+    </div>
+
+		</div>
+
+		<header>
+		<!--	<img src="" alt="town hall logo"> -->
 			<hgroup>
-				<h1> Mark's Margs </h1>
-				<h2> "No Event is Complete Without a W.O.P.arita" - Mark M. Margarita </h2>
+				<img src="images/finallogo.png" alt="Margs Temporary Symbol" height="200px">
+				<h3> "No Event is Complete Without a W.O.P.arita" - Mark M. Margarita </h3>
 			</hgroup>
 		</header>
-		<nav id="nav_menu">
-    
+		<nav id="nav_bar">
+
         <a href="Homepage.html">Home<a/>
         <a href="drinks.html">Drinks<a/>
         <a href="cateringpage.html">Catering</a>
         <a href="aboutus.html">About Us</a>
         <a href="contactpage.html">Contact</a>
 </nav>
-		<section>
-			<h2> section: calendar of events/locations </h2>
-			<article><h3> article: input boxes for contacting us VIA email</h3>
-			</article>
-		</section>
-		<aside>
-			<h2> aside: contact information; float: left </h2>
-	        <h2> <a href="Homepage.html"> Return to Home Page </a></h2>
-		</aside>
-		<aside>
-			<h3> aside: next to the "h3 article" above<br>
-				insert img links to facebook, twitter, and instagram<br>
-				float left</h3>	
+
+<section>
+	<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=du5pkgo3nnu1rngcpdb4udqv7k%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=America%2FChicago" style="text-align: center;" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+	<article>
+
+		<form action="action_page.php">
+	  <fieldset>
+	    <legend>We'd Love To Hear From You!</legend>
+	    First name:<br>
+	    <input type="text" name="firstname" value=" ">
+	    <br>
+	    Last name:<br>
+	    <input type="text" name="lastname" value=" ">
+			<br>
+			Email Address:<br>
+			<Input type="text" name="emailaddress" value=" ">
+			<br>
+
+<div>
+<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+Hey... say something!
+</textarea>
+<input type="submit" value="Submit">
+<form action="/html/tags/html_form_tag_action.cfm" method="post">
+</form>
+		</fieldset>
+
+	</form>
+
+	</article>
+
+
+
+
+
+</section>
+
+
+<aside>
+
+<p>Trying To Find Us? <br><br>
+	Phone: 555-555-555<br><br>
+	Email: Marksmargs@aim.com<br>
+    <br>
+
+
+
+
+
+
+   </p>
+
+				<img src="images/FB.png" alt="Margs Temporary Symbol" style="width: 50px; height: 50px;"><br>
+				<img src="images/twitter.png" alt="Margs Temporary Symbol" style="width: 50px; height: 50px;"><br>
+				<img src="images/instagram.png" alt="Margs Temporary Symbol" style="width: 50px; height: 50px;"><br>
+
+</aside>
+
+
+
 		<footer>
 			<p>
 				&copy; 2017, 1234 N. Prairie St. Whitewater, WI 53190

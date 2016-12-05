@@ -1,9 +1,11 @@
 /* horizontal nav bar */
 #nav_bar {
+	text-align: center;
 	clear: left;
 	margin: 0;
 	padding: 0;
-	border-bottom: 2px solid #00efef;
+	border-bottom: 2px solid #06F7B7;
+	background-color: #06F7B7;
 }
 #nav_bar ul {
 	margin-left: 0;
@@ -21,6 +23,7 @@
 #nav_bar a.current { color: #00efef; }
 
 #nav_bar a:hover, a:focus{
-	background-color: yellow; 
+	background-color: #111; 
 	color: red; 
 }
+
