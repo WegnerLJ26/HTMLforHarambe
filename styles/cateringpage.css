@@ -1,4 +1,4 @@
-html{background-color: hsla(185,100%,32%,1.00);}
+html{background-color: white;}
 hgroup {text-align: center;}
 
 #nav_bar {
@@ -35,6 +35,26 @@ hgroup {text-align: center;}
 
 #nav_bar li a:hover {
     background-color: #111;
+}
+
+body{
+	background-color: hsla(185,100%,32%,1.00);
+	color: white;
+}
+
+aside{
+	background-color: hsla(185,100%,32%,1.00);
+	color: white;
+}
+
+header{
+	background-color: hsla(185,100%,32%,1.00);
+	color: white;
+}
+
+head{
+	background-color: hsla(185,100%,32%,1.00);
+	color: white;
 }
 
 #signupform{margin-top: 1pt;
