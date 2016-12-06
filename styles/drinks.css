@@ -53,6 +53,11 @@ hgroup {
 	/*background-color: #00efef;*/
 	background-color: #06F7B7;
 }
+
+#nav_bar a {
+	text-decoration: none;
+}
+
 #nav_bar a:visited { color: green; }
 #nav_bar a.current { color: #ef9c00; }
 
@@ -62,7 +67,8 @@ hgroup {
 }
 
 body{
-	width: 100%;
+	/*width: 100%;*/
+	width: ;
 	/*background-color: white;
 	
 	margin-left: auto;
@@ -169,15 +175,31 @@ body{
 	float: left;
 }
 
+/*May be able to remove this */
 .twitter-timeline {
 	width: 40%;
 	float: right;
 }
 
+.dropbtn {
+	background-color: #06F7B7;
+	font-size: 12px;
+	padding: 12px 28px;
+	border-radius: 8px;
+	color: green;
+	font-variant: small-caps;
+
+}
+
+.styled-select select {
+	height: 30px;
+	border-radius: 8px;
+}
 
 
 /*for the footer clear the float and keep it at the bottom of the css styles sheet*/
 footer {
+	color: white;
 	text-align: center;
 	width: 100%;
 	clear: both;

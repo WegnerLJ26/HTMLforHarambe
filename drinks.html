@@ -12,9 +12,7 @@
 		</script>
 
 		<!-- May not need to include this HTML5 library -->
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
-
+		<!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 	</head>
 
 	<header>
@@ -30,7 +28,6 @@
 	</header>
 
 	<body>
-
 		
 		<!--universal horizontal nav bar -->
 		<nav id="nav_bar">
@@ -60,28 +57,28 @@
 							$('.drinks_image').html('<img src="images/woparita.jpg" width="200px" height="200px"/>');
 
 							//Set the summary
-							$('.drinks_summary').html("The Woparita has been a staple of Mark's Margs every since the company was founded.");
+							$('.drinks_summary').html("The Woparita has been a staple of Mark's Margs every since the company was founded. It is a huge hit on the University of Wisconsin - Whitewater campus. There are many different ways to make this drink and students have put there own twist on it. The Woparita is so famous though because of Mr. Margarita's secret ingredient.");
 							break;
 						case 'Morning Sunrise':
 							//Set the image
 							$('.drinks_image').html('<img src="images/morningsunrise.jpg" height="200px" width="200px"/>');
 
 							//Set the summary
-							$('.drinks_summary').html("The Morning Sunrise is the perfect drink for a Saturday morning.");
+							$('.drinks_summary').html("The Morning Sunrise is the perfect drink for a hungover Saturday morning. It will energize you and wake you up for a long day of productivity!");
 							break;
 						case 'Coffee Marg':
 							//Set the image
 							$('.drinks_image').html('<img src="images/coffeemarg.jpg" height="200px" width="200px"/>');
 
 							//Set the summary
-							$('.drinks_summary').html("The Coffee Marg is the perfect replacement for regular old morning coffee!");
+							$('.drinks_summary').html("The Coffee Marg is the perfect replacement for regular old morning coffee! For those who are trying to cut down on their coffee intake, I highly suggest this. You'll find you also have more fun at work drinking coffee margaritas rather than a regular old cup o' joe.");
 							break;
 						case 'Tropical Marg':
 							//Set the image
 							$('.drinks_image').html('<img src="images/tropicalmarg.jpg" height="200px" width="200px"/>');
 
 							//Set the summary
-							$('.drinks_summary').html("The Tropical Marg is great for a nice summary day at the Whitewater beach!");
+							$('.drinks_summary').html("The Tropical Marg is the perfect drink to pass around during a sunny day cooking out at the local Whitewater beach.");
 							break;
 						case 'Pomarita':
 							//Set the image
@@ -95,35 +92,35 @@
 							$('.drinks_image').html('<img src="images/calientemarg.jpg" height="200px" width="200px" />');
 
 							//Set the summary
-							$('.drinks_summary').html("The Caliente Marg is for those spice lovers out there.");
+							$('.drinks_summary').html("The Caliente Marg is for all those spicey food lovers out there. You'll spend the rest of your day with an extra hop in your step.");
 							break;
 						case 'Chocolate Marg':
 							//Set the image
 							$('.drinks_image').html('<img src="images/chocolatemarg.jpg" height="200px" width="200px" />');
 
 							//Set the summary
-							$('.drinks_summary').html("The Chocolate Marg is for all those sweet lovers out there.");
+							$('.drinks_summary').html("The Chocolate Marg is one of Mr. Margaritas more unique recipes. Don't knock it  before you try it though. The tequila and chocolate flavors blend together seamlessly to provide a truly unique margarita experience.");
 							break;
 						case 'Strawberry Marg':
 							//Set the image
 							$('.drinks_image').html('<img src="images/strawberrymarg.jpg" height="200px" width="200px"/>');
 
 							//Set the summary
-							$('.drinks_summary').html("The Strawberry Marg is a classic well known drink, created the Mark's Marg way.");
+							$('.drinks_summary').html("The Strawberry Marg is a classic well known drink, created the Mark's Marg way. For anyone who doesn't want to try one of the more radical drinks available, this is a safe alternative.");
 							break;
 						case 'Raspbarita':
 							//Set the image
 							$('.drinks_image').html('<img src="images/raspbarita.jpg" height="200px" width="200px"/>');
 
 							//Set the summary
-							$('.drinks_summary').html("The Raspbarita is another classic drink created by Mark with a unique twist.");
+							$('.drinks_summary').html("The Raspbarita is another classic well known drink Mr. Margarita has throw his own personal touch into.");
 							break;
 						case 'The Mamacita':
 							//Set the image
 							$('.drinks_image').html('<img src="images/mamacitamarg.png" height="200px" width="200px" />');
 
 							//Set the summary
-							$('.drinks_summary').html("The Mamacita is right behind the Woparita in popularity.");
+							$('.drinks_summary').html("The Mamacita is right behind the Woparita in popularity. Mr. Margarita, being the gentleman and scholar he is, wanted to create a drink especially for the ladies. The result was the Mamacita. Perfect for any ladies night out!");
 							break;
 					}
 
@@ -137,7 +134,7 @@
 		<section id="leftdrinks">
 
 		<!-- This dropdown will contain all the drinks that we have on our website. Once you select a drink from the dropdown, it will display an image and brief description of the drink you've chosen. There will be also a link to an external page dedicated to just that drink with a more thorough explanation -->
-			<div class="drinks_dropdown">
+			<div class="styled-select">
 				<select id="drink_select">
 					<option value="Woparita" id="woparita">Woparita</option>
 					<option value="Morning Sunrise" id="morningsunrise">Morning Sunrise</option>
@@ -177,7 +174,7 @@
 
 			<!-- Display summary on right side -->
 			<div class="wop_float_right">
-				<p>Summary of Woparita</p>
+				<p>The Woparita has been a staple of Mark's Margs every since the company was founded. It is a huge hit on the University of Wisconsin - Whitewater campus. There are many different ways to make this drink and students have put there own twist on it. The Woparita is so famous though because of Mr. Margarita's secret ingredient.</p>
 			</div>
 
 			<!--Display title of drink above image and summary -->
@@ -190,7 +187,7 @@
 
 			<!-- Display summary on right side -->
 			<div class="tropical_float_right">
-				<p>Summary of Tropical Marg</p>
+				<p>The Tropical Marg is the perfect drink to pass around during a sunny day cooking out at the local Whitewater beach.</p>
 			</div>
 
 			<!-- Display title of drink above image and summary -->
@@ -203,7 +200,7 @@
 
 			<!-- Display summary on right side -->
 			<div class="caliente_float_right">
-				<p>Summary of The Caliente Marg</p>
+				<p>The Caliente Marg is for all those spicey food lovers out there. You'll spend the rest of your day with an extra hop in your step.</p>
 			</div>
 
 			<!-- Display title of drink above image and summary -->
@@ -216,7 +213,7 @@
 
 			<!-- Display summary on right side -->
 			<div class="mamacita_float_right">
-				<p>Summary of The Mamacita</p>
+				<p>The Mamacita is right behind the Woparita in popularity. Mr. Margarita, being the gentleman and scholar he is, wanted to create a drink especially for the ladies. The result was the Mamacita. Perfect for any ladies night out!</p>
 			</div>
 
 			<!-- Display title of drink above image and summary -->
@@ -229,7 +226,7 @@
 
 			<!-- Display image on right side -->
 			<div class="sunrise_float_right">
-				<p>Summary of the Morning Sunrise</p>
+				<p>The Morning Sunrise is the perfect drink for a hungover Saturday morning. It will energize you and wake you up for a long day of productivity!</p>
 			</div>
 
 		</div>
