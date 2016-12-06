@@ -1,3 +1,34 @@
+*{ margin:0; padding:0; }
+
+html{
+	background-color:hsla(185,100%,32%,1.00);
+}
+
+/*This will change the header and hgroup section to be a nice light blue color */
+header{
+	background-color:hsla(185,100%,32%,1.00);
+}
+
+header {
+	width: 100%;
+	background-color:hsla(185,100%,32%,1.00);
+}
+
+header img {
+	width: 20%;
+	float: left;
+}
+
+hgroup {
+	width: 80%;
+	background-color:hsla(185,100%,32%,1.00);
+	float: left;
+	text-align: center;
+	color: white;
+	font-style: italic;
+	padding-top: 30px;
+}
+
 /* horizontal nav bar */
 #nav_bar {
 	text-align: center;
@@ -12,18 +43,84 @@
 	margin-bottom: .5em;
 	list-style: none;
 	padding: 0.5em 2em 0 0;
+	/*background-color: #333;*/
+	background-color: #06F7B7;
 }
 #nav_bar li {
 	display: inline;
 	padding: 0 1.5em;
-	/*border-right: 2px solid black;*/
-	background-color: #00efef;
+	border-right: 2px solid orange;
+	/*background-color: #00efef;*/
+	background-color: #06F7B7;
 }
 #nav_bar a:visited { color: green; }
-#nav_bar a.current { color: #00efef; }
+#nav_bar a.current { color: #ef9c00; }
 
 #nav_bar a:hover, a:focus{
-	background-color: #111; 
-	color: red; 
+	background-color: #5acea4; 
+	color: yellow; 
 }
+
+body{
+	width: 100%;
+	/*background-color: white;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin: auto;*/
+}
+
+/*portion that will be displaying the drinks*/
+#leftdrinks {
+	width: 70%;
+	float: left;
+	padding-top: 1em;
+	padding-left: 3em;
+}
+
+/*portion that will be displaying the embedded twitter feed */
+#righttwitter {
+	clear: left;
+	width: 30%;
+	float: right;
+}
+
+/*in the #leftdrinks left-floated section, float .drinks_image to the left and
+.drinks_summary to the right */
+.drinks_image {
+	clear: right;
+	width: 35%;
+	float: left;
+}
+
+.drinks_summary {
+	float: right;
+	width: 35%;
+}
+
+/*clear the float to make the Signature drinks list flow below the dropdown*/
+.signatureDrinks {
+	clear: both;
+}
+
+.signatureDrinks h2 {
+	clear: both;
+	color: white;
+}
+
+.signatureDrinks h3 {
+	clear: both;
+	color: white;
+}
+
+/*for the footer clear the float and keep it at the bottom of the css styles sheet*/
+footer {
+	text-align: center;
+	width: 100%;
+	clear: both;
+}
+
+
+
+
 

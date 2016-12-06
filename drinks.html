@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Drinks</title>
+		<title>Mark's Margs - Drinks</title>
 		<!--<link rel="shortcut icon" href="images/favicon.ico">-->
 		<link rel="stylesheet" href="styles/drinks.css">  <!--step 3: add URL of the CSS file-->
 		
@@ -11,18 +11,26 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 		</script>
 
+		<!-- May not need to include this HTML5 library -->
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+
 	</head>
 
-	<body>
-		<header>
+	<header>
 
-			<!--<img src="images/town_hall_logo.gif" alt="town hall logo"> -->
-		
+		<!-- Mark's Margs Logo -->
+		<img src="images/finallogo.png" alt="Mark's Margs Logo" height="200px" id="logoimage"/>
+			
 			<hgroup>
 				<h1> Mark's Margs </h1>
 				<h2>"We'll drive, so you can drink!" - Mark M. Margarita </h2>
 			</hgroup>
-		</header>
+		
+	</header>
+
+	<body>
+
 		
 		<!--universal horizontal nav bar -->
 		<nav id="nav_bar">
@@ -31,7 +39,7 @@
 				<li><a href="drinks.html">Drinks</a></li>
 				<li><a href="cateringpage.html">Catering</a></li>
 				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contactpage.html">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -49,70 +57,70 @@
 					switch(selection){
 						case 'Woparita':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" width="200px" height="200px"/>');
+							$('.drinks_image').html('<img src="images/woparita.jpg" width="200px" height="200px"/>');
 
 							//Set the summary
 							$('.drinks_summary').html("The Woparita has been a staple of Mark's Margs every since the company was founded.");
 							break;
 						case 'Morning Sunrise':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/morningsunrise.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Morning Sunrise is the perfect drink for a Saturday morning.");
 							break;
 						case 'Coffee Marg':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/coffeemarg.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Coffee Marg is the perfect replacement for regular old morning coffee!");
 							break;
 						case 'Tropical Marg':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/tropicalmarg.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Tropical Marg is great for a nice summary day at the Whitewater beach!");
 							break;
 						case 'Pomarita':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/pomarita.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("With the Pomarita we have taken the classic Pomegranate flavor and recreated it as a fantastic Margarita treat!");
 							break;
 						case 'The Caliente Marg':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/calientemarg.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Caliente Marg is for those spice lovers out there.");
 							break;
 						case 'Chocolate Marg':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/chocolatemarg.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Chocolate Marg is for all those sweet lovers out there.");
 							break;
 						case 'Strawberry Marg':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/strawberrymarg.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Strawberry Marg is a classic well known drink, created the Mark's Marg way.");
 							break;
 						case 'Raspbarita':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/raspbarita.jpg" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Raspbarita is another classic drink created by Mark with a unique twist.");
 							break;
 						case 'The Mamacita':
 							//Set the image
-							$('.drinks_image').html('<img src="images/marg.jpg" />');
+							$('.drinks_image').html('<img src="images/mamacitamarg.png" />');
 
 							//Set the summary
 							$('.drinks_summary').html("The Mamacita is right behind the Woparita in popularity.");
@@ -142,10 +150,13 @@
 					<option value="Raspbarita" id="raspbarita">Raspbarita</option>
 					<option value="The Mamacita" id="mamacita">The Mamacita</option>
 				</select>
+
+				<!-- This portion will contain the button that is presse after the user has selected a drink from the drinks_dropdown menu -->
+				<button type="button" class="dropbtn">Display Drink</button>
+
 			</div>
 
-			<!-- This portion will contain the button that is presse after the user has selected a drink from the drinks_dropdown menu -->
-				<button type="button" class="dropbtn">Display Drink</button>
+			
 
 
 			<!-- This portion will be where the image is displayed when a drinks_dropdown option is selected -->
@@ -164,7 +175,7 @@
 
 			<!--Display image on left side -->
 			<div class="sig_float_left">
-				
+				<img src="images/woparita.jpg" alt="Woparita" height="200px" width="200px" />
 			</div>
 
 			<!-- Display summary on right side -->
@@ -177,7 +188,7 @@
 
 			<!-- Display image on left side -->
 			<div class="sig_float_left">
-				
+				<img src="images/tropicalmarg.jpg" alt="Tropical Marg" height="200px" width="200px" />
 			</div>
 
 			<!-- Display summary on right side -->
@@ -190,7 +201,7 @@
 
 			<!--Display image on left side -->
 			<div class="sig_float_left">
-				
+				<img src="images/calientemarg.jpg" alt="The Caliente Marg" height="200px" width="200px" />
 			</div>
 
 			<!-- Display summary on right side -->
@@ -203,7 +214,7 @@
 
 			<!-- Display image on left side -->
 			<div class="sig_float_left">
-				
+				<img src="images/mamacitamarg.png" alt="The Mamacita" height="200px" width="200px" />
 			</div>
 
 			<!-- Display summary on right side -->
@@ -216,7 +227,7 @@
 
 			<!-- Display image on left side -->
 			<div class="sig_float_left">
-				
+				<img src="images/morningsunrise.jpg" alt="The Morning Sunrise" height="200px" width="200px" />
 			</div>
 
 			<!-- Display image on right side -->
@@ -227,12 +238,13 @@
 		</div>
 		</section>
 
-		<!-- float body to the right -->
-		<body id="righttwitter">
+		<!-- float section to the right -->
+		<section id="righttwitter">
 		<!-- in this portion we will have our embedded twitter feed -->
+		<a class="twitter-timeline" href="https://twitter.com/Marks_Margs">Tweets by Marks_Margs</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</section>
 
-		</body>
-
+		<!-- clear all floats -->
 		<footer>
 			<p>
 				&copy; 2017, Mark M. Margarita 1234 S. Prairie St. Whitewater, WI 53190
