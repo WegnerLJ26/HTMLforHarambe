@@ -31,28 +31,34 @@ hgroup {
 
 /* horizontal nav bar */
 #nav_bar {
-	text-align: center;
+
+	text-align:center;
 	clear: left;
 	margin: 0;
 	padding: 0;
-	border-bottom: 2px solid #06F7B7;
+	border: 2px solid #06F7B7;
 	background-color: #06F7B7;
 }
 #nav_bar ul {
-	margin-left: 0;
-	margin-bottom: .5em;
-	list-style: none;
-	padding: 0.5em 2em 0 0;
-	/*background-color: #333;*/
-	background-color: #06F7B7;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
 }
 #nav_bar li {
-	display: inline;
-	padding: 0 1.5em;
-	border-right: 2px solid orange;
-	/*background-color: #00efef;*/
-	background-color: #06F7B7;
+	float: left;
+
+
 }
+#nav_bar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+
+	}
 
 #nav_bar a {
 	text-decoration: none;
@@ -61,14 +67,12 @@ hgroup {
 #nav_bar a:visited { color: green; }
 #nav_bar a.current { color: #ef9c00; }
 
-#nav_bar a:hover, a:focus{
-	background-color: #5acea4; 
-	color: yellow; 
+#nav_bar li a:hover {
+    background-color: #111;
 }
 
 body{
-	/*width: 100%;*/
-	width: ;
+	width: 100%;
 	/*background-color: white;
 	
 	margin-left: auto;
@@ -86,9 +90,12 @@ body{
 
 /*portion that will be displaying the embedded twitter feed */
 #righttwitter {
-	clear: left;
+	position: absolute;
 	width: 40%;
-	float: right;
+	top: 280px;
+	right: 45px;
+
+	
 }
 
 /*in the #leftdrinks left-floated section, float .drinks_image to the left and
