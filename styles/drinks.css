@@ -72,7 +72,7 @@ body{
 
 /*portion that will be displaying the drinks*/
 #leftdrinks {
-	width: 70%;
+	width: 60%;
 	float: left;
 	padding-top: 1em;
 	padding-left: 3em;
@@ -81,7 +81,7 @@ body{
 /*portion that will be displaying the embedded twitter feed */
 #righttwitter {
 	clear: left;
-	width: 30%;
+	width: 40%;
 	float: right;
 }
 
@@ -89,13 +89,14 @@ body{
 .drinks_summary to the right */
 .drinks_image {
 	clear: right;
-	width: 35%;
+	width: 30%;
 	float: left;
 }
 
 .drinks_summary {
-	float: right;
-	width: 35%;
+	float: left;
+	width: 30%;
+	color: white;
 }
 
 /*clear the float to make the Signature drinks list flow below the dropdown*/
@@ -112,6 +113,68 @@ body{
 	clear: both;
 	color: white;
 }
+
+.wop_float_left {
+	width: 30%;
+	float: left;
+}
+
+.wop_float_right {
+	color: white;
+	width: 30%;
+	float: left;
+}
+
+.tropical_float_left {
+	width: 30%;
+	float: left;
+}
+
+.tropical_float_right {
+	color: white;
+	width: 30%;
+	float: left;
+}
+
+.caliente_float_left {
+	width: 30%;
+	float: left;
+}
+
+.caliente_float_right {
+	color: white;
+	width: 30%;
+	float: left;
+}
+
+.mamacita_float_left {
+	width: 30%;
+	float: left;
+}
+
+.mamacita_float_right {
+	color: white;
+	width: 30%;
+	float: left;
+}
+
+.sunrise_float_left {
+	width: 30%;
+	float: left;
+}
+
+.sunrise_float_right {
+	color: white;
+	width: 30%;
+	float: left;
+}
+
+.twitter-timeline {
+	width: 40%;
+	float: right;
+}
+
+
 
 /*for the footer clear the float and keep it at the bottom of the css styles sheet*/
 footer {
